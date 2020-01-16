@@ -17,6 +17,7 @@ public void test() {
       
    driver = new HtmlUnitDriver();
 	driver.get("http://www.noblr.com");
+	driver.manage().window().maximize();
 	System.out.println("page title as : "+driver.getTitle());
 	System.out.println("currebt url ; "+driver.getCurrentUrl());
 }
